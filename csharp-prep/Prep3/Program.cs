@@ -63,7 +63,7 @@ class Program
         string userNumber = Console.ReadLine();
         int number = int.Parse(userNumber);
         int count = 1;
-        Console.WriteLine($"{count}");
+        // Console.WriteLine($"Counts:{count}");
         
         while (number != magicNumber)
         {
@@ -79,12 +79,12 @@ class Program
             userNumber = Console.ReadLine();
             number = int.Parse(userNumber);
             count += 1;
-            Console.WriteLine($"{count}");
+            // Console.WriteLine($"counts: {count}");
             
         }
         
         Console.WriteLine($"You are right, the number is: {magicNumber}");
-        Console.WriteLine($"{count}");
+        Console.WriteLine($"You guessed it correctly after: {count} guesses");
         Console.WriteLine("Do you want to play again? ");
         playAgain = Console.ReadLine();
         
