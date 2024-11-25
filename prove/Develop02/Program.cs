@@ -7,7 +7,7 @@ public class Program
 
     public static void Main(string[] args)
     {
-        string choice = "";
+    string choice = "";
 
     while (choice != "5")
     {
