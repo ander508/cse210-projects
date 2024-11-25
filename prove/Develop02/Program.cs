@@ -7,40 +7,45 @@ public class Program
 
     public static void Main(string[] args)
     {
-        while (true)
-        {
-            Console.WriteLine("\nJournal Menu:");
-            Console.WriteLine("1. Write a new entry");
-            Console.WriteLine("2. Display all entries");
-            Console.WriteLine("3. Save journal to a file");
-            Console.WriteLine("4. Load journal from a file");
-            Console.WriteLine("5. Exit");
-            Console.Write("Select an option: ");
+        string choice = "";
 
-            string choice = Console.ReadLine();
-            switch (choice)
-            {
-                case "1":
-                    WriteNewEntry();
-                    break;
-                case "2":
-                    journal.DisplayAll();
-                    break;
-                case "3":
-                    SaveJournal();
-                    break;
-                case "4":
-                    LoadJournal();
-                    break;
-                case "5":
-                    Console.WriteLine("Goodbye!");
-                    return;
-                default:
-                    Console.WriteLine("Invalid choice. Please try again.");
-                    break;
-            }
+    while (choice != "5")
+    {
+        Console.WriteLine("\nMenu:");
+        Console.WriteLine("1. Write a new entry");
+        Console.WriteLine("2. Display the journal");
+        Console.WriteLine("3. Save the journal to a file");
+        Console.WriteLine("4. Load the journal from a file");
+        Console.WriteLine("5. Exit");
+        Console.Write("Enter your choice: ");
+        choice = Console.ReadLine();
+
+        if (choice == "1")
+        {
+            WriteNewEntry();
+        }
+        else if (choice == "2")
+        {
+            journal.DisplayAll();
+        }
+        else if (choice == "3")
+        {
+            SaveJournal();
+        }
+        else if (choice == "4")
+        {
+            LoadJournal();
+        }
+        else if (choice == "5")
+        {
+            Console.WriteLine("Goodbye!");
+        }
+        else
+        {
+            Console.WriteLine("Invalid choice. Please try again.");
         }
     }
+        }
 
     public static void WriteNewEntry()
     {
