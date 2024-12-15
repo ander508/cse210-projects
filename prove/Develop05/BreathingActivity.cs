@@ -1,4 +1,4 @@
-public class BreathingActivity : MindfulnessActivity
+public class BreathingActivity : Activity
 {
     public override void Start()
     {

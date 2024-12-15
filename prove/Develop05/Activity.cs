@@ -1,4 +1,4 @@
-public abstract class MindfulnessActivity
+public abstract class Activity
 {
     protected int duration;
 

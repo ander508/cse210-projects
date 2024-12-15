@@ -1,4 +1,4 @@
-public class ReflectionActivity : MindfulnessActivity
+public class ReflectionActivity : Activity
 {
     private List<string> prompts = new List<string>
     {
