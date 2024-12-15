@@ -9,7 +9,7 @@ public class Order
             this.customer = customer;
         }
 
-        // calculate the total cost of the order
+        // Method to calculate the total cost of the order
         public double GetTotalPrice()
         {
             double totalCost = 0;
@@ -20,7 +20,7 @@ public class Order
             }
 
             // Add the shipping cost based on the customer's location
-            double shippingCost = customer.IsInNigeria() ? 5.0 : 35.0;
+            double shippingCost = customer.IsInUSA() ? 5.0 : 35.0;
             totalCost += shippingCost;
 
             return totalCost;

@@ -10,7 +10,7 @@ class Program
             Product product3 = new Product("Keyboard", 103, 50, 1);
 
             // Creating customers with different addresses
-            Address address1 = new Address("123 Main St", "Lagos", "LAG", "Nigeria");
+            Address address1 = new Address("123 Main St", "Los Angeles", "CA", "USA");
             Customer customer1 = new Customer("John Doe", address1);
 
             Address address2 = new Address("456 Maple Rd", "Vancouver", "BC", "Canada");

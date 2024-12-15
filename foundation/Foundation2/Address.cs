@@ -14,9 +14,9 @@ public class Address
         }
 
         // Method to check if the address is in the USA
-        public bool IsInNigeria()
+        public bool IsInUSA()
         {
-            return country == "Nigeria";
+            return country == "USA";
         }
 
         // Method to return the full address as a formatted string

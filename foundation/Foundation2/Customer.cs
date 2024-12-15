@@ -10,9 +10,9 @@ public class Customer
         }
 
         // Method to check if the customer is in the USA
-        public bool IsInNigeria()
+        public bool IsInUSA()
         {
-            return address.IsInNigeria();
+            return address.IsInUSA();
         }
 
         // Method to return the customer name and address
